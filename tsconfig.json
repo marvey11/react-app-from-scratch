@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    /* Don't emit anything; allow Babel to transpile. */
+    "noEmit": true,
+    "target": "ESNext",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "module": "es6",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    /* Ensure that Babel can safely transpile files in the TypeScript project */
+    "isolatedModules": true
+  }
+}
