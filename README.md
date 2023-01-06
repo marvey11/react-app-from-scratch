@@ -181,18 +181,14 @@ Create the file `babel.config.json` with the following contents:
 }
 ```
 
-We'll also have to adapt `tsconfig.json` since we need to make sure that `tsc` will not be creating `*.js` files any longer. Add the following lines to the `compilerOptions` section in `tsconfig.json`.
+We'll also have to adapt `tsconfig.json` since we need to make sure that `tsc` will not be creating `*.js` files any longer. Add the following lines to the `compilerOptions` section in `tsconfig.json`:
 
 ```json
-{
-  ...
-  /* Don't emit anything; allow Babel to transpile. */
-  "noEmit": true,
-  /* Ensure that Babel can safely transpile files in the TypeScript project */
-  "isolatedModules": true
-  ...
-}
+"noEmit": true,
+"isolatedModules": true
 ```
+
+The `noEmit` parameter tells `tsc` not to emit anything any longer. Babel will take care of that. The `isolatedModules` parameter -- according to the TypeScript documentation [(link)](https://www.typescriptlang.org/docs/handbook/babel-with-typescript.html) -- ensures that Babel can safely transpile files in the TypeScript project.
 
 And finally, we'll need to change the build rules in `package.json`:
 
