@@ -276,9 +276,8 @@ Install the required packages:
 yarn add --dev webpack webpack-cli babel-loader
 ```
 
-The next step is to configure Webpack. As a first step we'll run the Babel transpiling from Webpack.
-
-delegate the Babel tran. Create the config file named `webpack.config.js` with the following contents:
+The next step is to configure Webpack. As a first step we'll run the Babel transpiling from Webpack. Create the config
+file named `webpack.config.js` with the following contents:
 
 ```javascript
 const path = require("path");
