@@ -1,6 +1,6 @@
 # React App From Scratch
 
-Setting up a Web App using TypeScript, React, Jest, Babel, Webpack, Babel, ESLint, Prettier, and yarn (classic).
+Setting up a Web App using TypeScript, React, Jest, Webpack, Babel, ESLint, Prettier, and yarn (classic).
 
 **NOT** going to use `create-react-app` (CRA).
 
